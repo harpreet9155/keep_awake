@@ -12,7 +12,7 @@ def move_mouse(w, l):
         pyautogui.moveTo(w, l, duration=0.25)
 
 # to check for the user argument
-if ((len(sys.argv) < 2) or int(sys.argv[1]) < 1 or type(sys.argv[1]) != int):
+if ((len(sys.argv) < 2) or int(sys.argv[1]) < 1):
     sleep_minutes = 3
 else:
     sleep_minutes = int(sys.argv[1])
